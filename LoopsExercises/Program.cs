@@ -53,6 +53,21 @@ namespace LoopsExercises
 
             // Enter your solution here
 
+            int i = 5;
+            while (i >= 1)
+            {
+                Console.WriteLine(i);
+
+                i--;
+            }
+           
+            
+                
+          
+
+
+             
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -68,6 +83,19 @@ namespace LoopsExercises
 
             // Enter your solution here
 
+            int i = 1;
+            while (i <= 20)
+            {
+                Console.WriteLine("Pick a number between 1 and 20");
+                string userNumber = Console.ReadLine();
+                i = Convert.ToInt32(userNumber);
+
+                i--;
+
+            }
+
+
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -80,6 +108,8 @@ namespace LoopsExercises
             Console.WriteLine("PRINT THE SQUARE OF EVEN NUMBERS\n");
 
             // Enter your solution here
+            
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -97,6 +127,19 @@ namespace LoopsExercises
 
             int userInput = Convert.ToInt32(Console.ReadLine()); // This reads the user's input and converts it to an integer. We'll assume that users can only input integers.
             // Enter your solution here
+
+            Console.WriteLine("Enter A Number");
+            int userNumber = 0;
+            int result = userNumber % 3;
+
+            while (userNumber != result)
+            {
+                Console.WriteLine("enter a number");
+            }
+                
+              
+
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
