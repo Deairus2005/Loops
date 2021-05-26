@@ -53,6 +53,21 @@ namespace LoopsExercises
 
             // Enter your solution here
 
+            int i = 5;
+            while (i >= 1)
+            {
+                Console.WriteLine(i);
+
+                i--;
+            }
+           
+            
+                
+          
+
+
+             
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -68,6 +83,26 @@ namespace LoopsExercises
 
             // Enter your solution here
 
+
+
+            Console.WriteLine("Enter A Number Between 1 And 20");
+            int userNumber = Convert.ToInt32(Console.ReadLine());
+            if (userNumber >= 1 && userNumber <= 20){
+            
+                for(int i = userNumber; i > 0; i--)
+                {
+                    Console.WriteLine(i);
+
+                }
+                
+            }
+            else
+            {
+                Console.WriteLine("Enter A number between 1 and 20");
+            }
+
+
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -80,6 +115,24 @@ namespace LoopsExercises
             Console.WriteLine("PRINT THE SQUARE OF EVEN NUMBERS\n");
 
             // Enter your solution here
+
+            //2,4,6,8 = even
+            // 1,3,5,7,9 = odd
+            // 9 executions (conditional= done)
+
+            for( int i = 1; i < 10; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    Console.WriteLine(i * i);
+                }
+                else if(i % 2 == 1)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -95,8 +148,32 @@ namespace LoopsExercises
             Console.Clear();
             Console.WriteLine("GUESS THE MAGIC NUMBER\n");
 
-            int userInput = Convert.ToInt32(Console.ReadLine()); // This reads the user's input and converts it to an integer. We'll assume that users can only input integers.
+            //
             // Enter your solution here
+
+            Console.WriteLine("Enter A Number");
+            bool get_it_Right = true;
+
+            while (get_it_Right) 
+            {
+                int userInput = Convert.ToInt32(Console.ReadLine());
+                if (userInput % 3 == 0) {
+
+                    get_it_Right = false;
+
+                    Console.WriteLine("You Win ");
+            }
+                else
+                
+                    Console.WriteLine("Try again");
+                
+            }
+            
+
+                
+              
+
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
